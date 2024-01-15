@@ -36,6 +36,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%=n.getTitle()%></h5>
                 <p class="card-text"><%=n.getContent()%></p>
+                <p><b>Last update : </b><b class="text-primary"><%=n.getAddedDate()%></b></p>
                 <a href="/EditNote?note_id=<%=n.getId()%>" class="btn btn-outline-info">Edit</a>
                 <a href="/DeleteNote?note_id=<%=n.getId()%>" class="btn btn-outline-danger">delete</a>
             </div>
