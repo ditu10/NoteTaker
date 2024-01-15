@@ -12,4 +12,24 @@
         <servlet-name>SaveNoteDetails</servlet-name>
         <url-pattern>/SaveNoteDetails</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteNote</servlet-name>
+        <servlet-class>com.servlets.DeleteNote</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteNote</servlet-name>
+        <url-pattern>/DeleteNote</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditNote</servlet-name>
+        <servlet-class>com.servlets.EditNote</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditNote</servlet-name>
+        <url-pattern>/EditNote</url-pattern>
+    </servlet-mapping>
 </web-app>

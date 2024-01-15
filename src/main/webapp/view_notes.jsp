@@ -32,12 +32,12 @@
         %>
 
         <div class="card my-3" style="width: 100%">
-<%--            <img src="..." class="card-img-top" alt="...">--%>
+            <img src="./images/notepad.png" style="max-width:100px" class="card-img-top mx-3 mt-2" alt="...">
             <div class="card-body">
                 <h5 class="card-title"><%=n.getTitle()%></h5>
                 <p class="card-text"><%=n.getContent()%></p>
-                <a href="#" class="btn btn-primary">update</a>
-                <a href="#" class="btn btn-primary">delete</a>
+                <a href="/EditNote?note_id=<%=n.getId()%>" class="btn btn-outline-info">Edit</a>
+                <a href="/DeleteNote?note_id=<%=n.getId()%>" class="btn btn-outline-danger">delete</a>
             </div>
         </div>
         <%
